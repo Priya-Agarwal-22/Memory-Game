@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <div id="details">
+       <div>
+      <div id="textscore">SCORE: </div>
+      <div id="score"></div></div>
+      <div>
+             <button id="play" onclick="playgame()">PLAY GAME</button>
+      </div>
+      <div>
+      <div id="timetext">TIME LEFT:</div>
+      <div id="time"></div></div>
+      </div>
+    
+    <div id="game">
+      <div class="memory-card" data-food="brownie">
+             <img class="front-face" src="images/brownie.jpg">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="brownie">
+             <img class="front-face" src="images/brownie.jpg">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+     <div class="memory-card" data-food="burger">
+             <img class="front-face" src="images/burger.png">
+             <img class="back-face" src="images/backimg.png">
+     </div>
+
+     <div class="memory-card" data-food="burger">
+             <img class="front-face" src="images/burger.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="cake">
+             <img class="front-face" src="images/cake.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="cake">
+             <img class="front-face" src="images/cake.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="choclate">
+             <img class="front-face" src="images/choclate.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="choclate">
+             <img class="front-face" src="images/choclate.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="chowmein">
+             <img class="front-face" src="images/chowmein.jpg">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="chowmein">
+             <img class="front-face" src="images/chowmein.jpg">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="coffee">
+             <img class="front-face" src="images/coffee.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="coffee">
+             <img class="front-face" src="images/coffee.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="cold-drink">
+             <img class="front-face" src="images/cold-drink.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="cold-drink">
+             <img class="front-face" src="images/cold-drink.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+<!-- neertikka">
+             <img class="front-face" src="images/paneertikka.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+      <div class="memory-card" data-food="fries">
+             <img class="front-face" src="images/fries.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+      <div class="memory-card" data-food="fries">
+             <img class="front-face" src="images/fries.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+      <div class="memory-card" data-food="ice-cream">
+             <img class="front-face" src="images/ice-cream.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+      <div class="memory-card" data-food="ice-cream">
+             <img class="front-face" src="images/ice-cream.png">
+             <img class="back-face" src="images/backimg.png"> -->
+      <!-- </div>>
+      <div class="memory-card" data-food="momos">
+             <img class="front-face" src="images/momos.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+      <div class="memory-card" data-food="momos">
+             <img class="front-face" src="images/momos.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+      <div class="memory-card" data-food="pa
+      <div class="memory-card" data-food="paneertikka">
+             <img class="front-face" src="images/paneertikka.png">
+             <img class="back-face" src="images/backimg.png">
+      </div> -->
+
+      <div class="memory-card" data-food="pasta">
+             <img class="front-face" src="images/pasta.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="pasta">
+             <img class="front-face" src="images/pasta.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="pizza">
+             <img class="front-face" src="images/pizza.jpg">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="pizza">
+             <img class="front-face" src="images/pizza.jpg">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="shake">
+             <img class="front-face" src="images/shake.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <div class="memory-card" data-food="shake">
+             <img class="front-face" src="images/shake.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+
+      <!-- <div class="memory-card" data-food="sweet">
+             <img class="front-face" src="images/sweet.png">
+             <img class="back-face" src="images/backimg.png">
+      </div>
+      <div class="memory-card" data-food="sweet">
+             <img class="front-face" src="images/sweet.png">
+             <img class="back-face" src="images/backimg.png">
+      </div> -->
+   </div>
+<script src="index.js"></script>
+</body>
+</html>
