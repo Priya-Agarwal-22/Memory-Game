@@ -8,7 +8,7 @@ Click this link : https://priya-agarwal-22.github.io/Memory-Game/
 
 # Instructions
 1. Click on a card. Keep revealing cards by working your memory to remember each opened card.
-2. Match each card properly with less time and less moves.
+2. Match each card properly within less time.
 
 # Challenge in the game
-1. Finish in less time with less moves.
+1. Finish the game within the given time period.
